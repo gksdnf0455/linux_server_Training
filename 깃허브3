@@ -1,0 +1,46 @@
+root@hanul-virtual-machine:~# linkdir# nano orign
+linkdir#: 명령을 찾을 수 없습니다
+root@hanul-virtual-machine:~# cd
+root@hanul-virtual-machine:~# mkdir linkdir
+mkdir: `linkdir' 디렉터리를 만들 수 없습니다: 파일이 있습니다
+root@hanul-virtual-machine:~# cd linkdir/
+root@hanul-virtual-machine:~/linkdir# nano orginal_file
+root@hanul-virtual-machine:~/linkdir# ln original_file hardlink
+ln: 'original_file' 접근 실패: 그런 파일이나 디렉터리가 없습니다
+root@hanul-virtual-machine:~/linkdir# cat original_file
+cat: original_file: 그런 파일이나 디렉터리가 없습니다
+root@hanul-virtual-machine:~/linkdir# ls
+orginal_file
+root@hanul-virtual-machine:~/linkdir# ln orginal_file hardlink
+root@hanul-virtual-machine:~/linkdir# ln -s orginal_file softlink
+root@hanul-virtual-machine:~/linkdir# ls -il
+합계 8
+138265 -rw-r--r-- 2 root root 47  5월  9 10:52 hardlink
+138265 -rw-r--r-- 2 root root 47  5월  9 10:52 orginal_file
+138264 lrwxrwxrwx 1 root root 12  5월  9 11:08 softlink -> orginal_file
+root@hanul-virtual-machine:~/linkdir# cat hardlink
+링크시킬 원본 파일을 작성합니다.
+root@hanul-virtual-machine:~/linkdir# cat softlink
+링크시킬 원본 파일을 작성합니다.
+root@hanul-virtual-machine:~/linkdir# mv orginal_file ../
+root@hanul-virtual-machine:~/linkdir# ls
+hardlink  softlink
+root@hanul-virtual-machine:~/linkdir# hardlink
+hardlink: no directory or file specified
+root@hanul-virtual-machine:~/linkdir# cat hardlink
+링크시킬 원본 파일을 작성합니다.
+root@hanul-virtual-machine:~/linkdir# mv orginal_file 
+mv: 'orginal_file' 다음에 대상 파일 명령이 누락됨
+자세한 정보는 'mv --help'를 입력하십시오.
+root@hanul-virtual-machine:~/linkdir# mv orginal_file ./linkdir
+mv: 'orginal_file' 상태 정보 확인 불가: 그런 파일이나 디렉터리가 없습니다
+root@hanul-virtual-machine:~/linkdir# cd
+root@hanul-virtual-machine:~# mv orginal_file ./linkdir
+root@hanul-virtual-machine:~# cd linkdir
+root@hanul-virtual-machine:~/linkdir# ls
+hardlink  orginal_file  softlink
+root@hanul-virtual-machine:~/linkdir# ^C
+root@hanul-virtual-machine:~/linkdir# cat softlink
+링크시킬 원본 파일을 작성합니다.
+root@hanul-virtual-machine:~/linkdir# 
+

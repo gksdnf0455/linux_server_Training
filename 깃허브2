@@ -1,0 +1,174 @@
+root@hanul-virtual-machine:~# touch mydata.txt
+root@hanul-virtual-machine:~# 123
+123: 명령을 찾을 수 없습니다
+root@hanul-virtual-machine:~# ls -l
+합계 80
+-rw-r--r-- 1 root root     0  5월  9 09:25 mydata.txt
+-rw-r--r-- 1 root root 10240  4월 18 10:48 poly.tar
+-rw-r--r-- 1 root root   336  4월 18 10:50 poly1.xz
+drwx------ 5 root root  4096  3월 14 10:44 snap
+drwxr-xr-x 2 root root  4096  4월 18 11:21 test
+-rw-r--r-- 1 root root   152  4월 11 09:44 test.txt
+-rw-r--r-- 1 root root   152  4월 11 09:48 test1.txt
+-rw-r--r-- 1 root root   184  4월 11 09:48 test1.txt.xz
+drwxr-xr-x 2 root root  4096  4월 18 11:08 test2
+drwxr-xr-x 3 root root  4096  4월 18 11:08 test3
+-rw-r--r-- 1 root root    24  4월 11 09:34 text.txt
+drwxr-xr-x 2 root root  4096  3월 21 09:10 공개
+drwxr-xr-x 2 root root  4096  3월 21 09:10 다운로드
+drwxr-xr-x 2 root root  4096  3월 21 09:10 문서
+drwxr-xr-x 2 root root  4096  5월  2 11:39 바탕화면
+drwxr-xr-x 2 root root  4096  3월 21 09:10 비디오
+drwxr-xr-x 2 root root  4096  3월 21 09:10 사진
+drwxr-xr-x 2 root root  4096  3월 21 09:10 음악
+drwxr-xr-x 2 root root  4096  3월 21 09:10 템플릿
+root@hanul-virtual-machine:~# chmod 644 mydata.txt
+root@hanul-virtual-machine:~# ls -; mydata.txt
+ls: '-'에 접근할 수 없음: 그런 파일이나 디렉터리가 없습니다
+mydata.txt: 명령을 찾을 수 없습니다
+root@hanul-virtual-machine:~# ls -l mydata.txt
+-rw-r--r-- 1 root root 0  5월  9 09:25 mydata.txt
+root@hanul-virtual-machine:~# chmod u+x mydata.txt
+root@hanul-virtual-machine:~# ls -l mydata.txt
+-rwxr--r-- 1 root root 0  5월  9 09:25 mydata.txt
+root@hanul-virtual-machine:~# chmod u-x mydata.txt
+root@hanul-virtual-machine:~# ls -l mydata.txt
+-rw-r--r-- 1 root root 0  5월  9 09:25 mydata.txt
+root@hanul-virtual-machine:~# chmod g-x mydata.txt
+root@hanul-virtual-machine:~# ls -l mydata.txt
+-rw-r--r-- 1 root root 0  5월  9 09:25 mydata.txt
+root@hanul-virtual-machine:~# chmod o+w mydata.txt
+root@hanul-virtual-machine:~# ls -l mydata.txt
+-rw-r--rw- 1 root root 0  5월  9 09:25 mydata.txt
+root@hanul-virtual-machine:~# chmod o+x mydata.txt
+root@hanul-virtual-machine:~# ls -l mydata.txt
+-rw-r--rwx 1 root root 0  5월  9 09:25 mydata.txt
+root@hanul-virtual-machine:~# chmod 777 mydata.txt
+root@hanul-virtual-machine:~# ls -l mydata.txt
+-rwxrwxrwx 1 root root 0  5월  9 09:25 mydata.txt
+root@hanul-virtual-machine:~# chmod 700 mydata.txt
+root@hanul-virtual-machine:~# ls -l mydata.txt
+-rwx------ 1 root root 0  5월  9 09:25 mydata.txt
+root@hanul-virtual-machine:~# chmod 701 mydata.txt
+root@hanul-virtual-machine:~# ls -l mydata.txt
+-rwx-----x 1 root root 0  5월  9 09:25 mydata.txt
+root@hanul-virtual-machine:~# chmod 644 mydata.txt
+root@hanul-virtual-machine:~# ls -l mydata.txt
+-rw-r--r-- 1 root root 0  5월  9 09:25 mydata.txt
+root@hanul-virtual-machine:~# chmod r-x mydata.txt
+chmod: 부적절한 모드: `r-x'
+자세한 정보는 'chmod --help'를 입력하십시오.
+root@hanul-virtual-machine:~# tail /etc/shadow
+gnome-initial-setup:*:19411:0:99999:7:::
+hplip:*:19411:0:99999:7:::
+gdm:*:19411:0:99999:7:::
+hanul:$y$j9T$HwD/2Fw3geEgCroTZL1C2.$K/qXISZzFusqYVy2R7RNK9C7wfhed/xXAYUFPVsmwx7:19451:0:99999:7:::
+poly21:$y$j9T$pB62IJmWESOQged/KPsa60$lrI3NXCUTaG0KQ6yWEJP2GRCZmvlfelhAMAQgX06ebB:19479:30:30:10::20818:
+poly2:$y$j9T$KiW6B5KRJFzenyvKl3RDr/$G/U16V5W2yAKzC2HoR47.IfWb0naRD2vSTYodJfGnt.:19479:0:99999:7:::
+poly3:$y$j9T$NZHhriE3MQcLJKww2o8aS0$Zdkab4LOi6eHuLjipN8cRqPItqYvc/aNW5tHVOt0XW4:19479:0:99999:7:::
+poly4:$y$j9T$Gl/S32fLCg3IbO2pZZP.i.$Jm/DYwu3odHmkwE/gZ49aXfrbVgCDHxb1bCEXiVifR7:19479:0:99999:7:::
+hanbit1:$y$j9T$4sByGVR3LRNtjI0c6lSEC1$VhePI13JGy/S6Wdm/1mKGKLRgL5VZkIFNb6W/TQOkG8:19479:0:99999:7:::
+hanbit2:$y$j9T$/5Ag2iK6aCu1DGDKSN1Lq.$PibsQV6Wn7Kuovmdowmsqxvk5w.1EIeb7U/Mu3T4CQ8:19479:0:99999:7:::
+root@hanul-virtual-machine:~# chown poly21 mydata.txt
+root@hanul-virtual-machine:~# ls -l mydata.txt
+-rw-r--r-- 1 poly21 root 0  5월  9 09:25 mydata.txt
+root@hanul-virtual-machine:~# ^C
+root@hanul-virtual-machine:~# chown poly2.poly2 mydata.txt
+root@hanul-virtual-machine:~# chgip poly3 mydata.txt
+명령어 'chgip' 을(를) 찾을 수 없습니다. 다음 명령어로 시도하시겠습니까:
+  deb chgrpcoreutils의 명령어 ' (8.32-4.1ubuntu1)'
+Try: apt install <deb name>
+root@hanul-virtual-machine:~# chgrp poly3 mydata.txt
+chgrp: 잘못된 그룹: `poly3'
+root@hanul-virtual-machine:~# ls -l mydata.txt
+-rw-r--r-- 1 poly2 poly2 0  5월  9 09:25 mydata.txt
+root@hanul-virtual-machine:~# chgrp root mydata.txt
+root@hanul-virtual-machine:~# nano sample
+root@hanul-virtual-machine:~# cat sample.txt
+cat: sample.txt: 그런 파일이나 디렉터리가 없습니다
+root@hanul-virtual-machine:~# cat sample
+리눅스 명령 연습중
+파일 허가권과 소유권에 대한 명령 실습중
+ls /var 
+root@hanul-virtual-machine:~# ls 0l sample
+ls: '0l'에 접근할 수 없음: 그런 파일이나 디렉터리가 없습니다
+sample
+root@hanul-virtual-machine:~# ls -l sample
+-rw-r--r-- 1 root root 93  5월  9 10:15 sample
+root@hanul-virtual-machine:~# chmod u+x sample
+root@hanul-virtual-machine:~# ls -l sample
+-rwxr--r-- 1 root root 93  5월  9 10:15 sample
+root@hanul-virtual-machine:~# sample
+명령어 'sample' 을(를) 찾을 수 없습니다. 그러나 다음을 통해 설치할 수 있습니다:
+apt install barcode
+root@hanul-virtual-machine:~# ./sample
+./sample: 줄 1: 리눅스: 명령어를 찾을 수 없음
+./sample: 줄 2: 파일: 명령어를 찾을 수 없음
+backups  crash	local  log   metrics  run   spool
+cache	 lib	lock   mail  opt      snap  tmp
+root@hanul-virtual-machine:~# chown poly_prof sample
+chown: 부적절한 사용자: `poly_prof'
+root@hanul-virtual-machine:~# chown hanul smaple
+chown: 'smaple'에 접근할 수 없음: 그런 파일이나 디렉터리가 없습니다
+root@hanul-virtual-machine:~# chown hanul sample
+root@hanul-virtual-machine:~# chown hanul hanul sample
+chown: 'hanul'에 접근할 수 없음: 그런 파일이나 디렉터리가 없습니다
+root@hanul-virtual-machine:~# chown hanul.hanul sample
+root@hanul-virtual-machine:~# ls -l sample
+-rwxr--r-- 1 hanul hanul 93  5월  9 10:15 sample
+root@hanul-virtual-machine:~# chown 754 sample
+root@hanul-virtual-machine:~# chown 700 smaple
+chown: 'smaple'에 접근할 수 없음: 그런 파일이나 디렉터리가 없습니다
+root@hanul-virtual-machine:~# chown 700 sample
+root@hanul-virtual-machine:~# ls -l sample
+-rwxr--r-- 1 700 hanul 93  5월  9 10:15 sample
+root@hanul-virtual-machine:~# chown 7 sample
+root@hanul-virtual-machine:~# ls -l sample
+-rwxr--r-- 1 lp hanul 93  5월  9 10:15 sample
+root@hanul-virtual-machine:~# chown 7-- sample
+chown: 부적절한 사용자: `7--'
+root@hanul-virtual-machine:~# su - hanul
+hanul@hanul-virtual-machine:~$ pwd
+/home/hanul
+hanul@hanul-virtual-machine:~$ ls -l /root/sample
+ls: '/root/sample'에 접근할 수 없음: 허가 거부
+hanul@hanul-virtual-machine:~$ ls -ld /root
+drwx------ 21 root root 4096  5월  9 10:15 /root
+hanul@hanul-virtual-machine:~$ logout
+root@hanul-virtual-machine:~# mv sample ~hanul
+root@hanul-virtual-machine:~# ls -l sample
+ls: 'sample'에 접근할 수 없음: 그런 파일이나 디렉터리가 없습니다
+root@hanul-virtual-machine:~# ls -l hanul/sample
+ls: 'hanul/sample'에 접근할 수 없음: 그런 파일이나 디렉터리가 없습니다
+root@hanul-virtual-machine:~# su - hanul
+hanul@hanul-virtual-machine:~$ ls -l sample
+-rwxr--r-- 1 lp hanul 93  5월  9 10:15 sample
+hanul@hanul-virtual-machine:~$ chmod 777 sample
+chmod: 'sample'의 권한 바꾸는 중: 명령을 허용하지 않음
+hanul@hanul-virtual-machine:~$ logout
+root@hanul-virtual-machine:~# chmod 777 smaple
+chmod: 'smaple'에 접근할 수 없음: 그런 파일이나 디렉터리가 없습니다
+root@hanul-virtual-machine:~# chmod 777 sample
+chmod: 'sample'에 접근할 수 없음: 그런 파일이나 디렉터리가 없습니다
+root@hanul-virtual-machine:~# su - hanul
+hanul@hanul-virtual-machine:~$ pwd
+/home/hanul
+hanul@hanul-virtual-machine:~$ ls -ld /hanul
+ls: '/hanul'에 접근할 수 없음: 그런 파일이나 디렉터리가 없습니다
+hanul@hanul-virtual-machine:~$ ls -ld /home/hanul
+drwxr-x--- 16 hanul hanul 4096  5월  9 10:38 /home/hanul
+hanul@hanul-virtual-machine:~$ chmod 777 sample
+chmod: 'sample'의 권한 바꾸는 중: 명령을 허용하지 않음
+hanul@hanul-virtual-machine:~$ ls -l sample
+-rwxr--r-- 1 lp hanul 93  5월  9 10:15 sample
+hanul@hanul-virtual-machine:~$ chmod 777 sample
+chmod: 'sample'의 권한 바꾸는 중: 명령을 허용하지 않음
+hanul@hanul-virtual-machine:~$ chown root.root sample
+chown: 'sample'의 소유권 바꾸는 중: 명령을 허용하지 않음
+hanul@hanul-virtual-machine:~$ chmod 777 sample
+chmod: 'sample'의 권한 바꾸는 중: 명령을 허용하지 않음
+hanul@hanul-virtual-machine:~$ logout
+root@hanul-virtual-machine:~# chmod 777 sample
+chmod: 'sample'에 접근할 수 없음: 그런 파일이나 디렉터리가 없습니다
+root@hanul-virtual-machine:~# 
+

@@ -1,0 +1,11 @@
+root@hanul-virtual-machine:~# ps -ef | grep yes
+root        6409    4624 99 11:35 pts/0    00:01:11 yes
+root        6439    6431  0 11:37 pts/1    00:00:00 grep --color=auto yes
+root@hanul-virtual-machine:~# kill -9 4624
+root@hanul-virtual-machine:~# ps -ef | grep yes
+root        6449    6441 98 11:39 pts/0    00:00:08 yes
+root        6451    6431  0 11:39 pts/1    00:00:00 grep --color=auto yes
+root@hanul-virtual-machine:~# kill -9 6449
+root@hanul-virtual-machine:~# ^C
+root@hanul-virtual-machine:~# 
+

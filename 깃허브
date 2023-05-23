@@ -1,0 +1,90 @@
+root@hanul-virtual-machine:~# passwd poly1
+passwd: 'poly1' 사용자가 없습니다
+root@hanul-virtual-machine:~# passwd poly21
+새 암호: 
+잘못된 비밀번호: 암호가 앞뒤 어느쪽에서 읽어도 같은 문맥입니다
+새 암호 재입력: 
+passwd: 암호를 성공적으로 업데이트했습니다
+root@hanul-virtual-machine:~# login
+hanul-virtual-machine 로그인: poly21
+암호: 
+Welcome to Ubuntu 22.04.2 LTS (GNU/Linux 5.19.0-35-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ * Introducing Expanded Security Maintenance for Applications.
+   Receive updates to over 25,000 software packages with your
+   Ubuntu Pro subscription. Free for personal use.
+
+     https://ubuntu.com/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+poly21@hanul-virtual-machine:~$ exit
+로그아웃
+root@hanul-virtual-machine:~# usermod --shell /bin/csh poly21
+root@hanul-virtual-machine:~# usermod --groups ubuntu hanul
+usermod: 'ubuntu' 그룹이 없습니다
+root@hanul-virtual-machine:~# usermod --groups hanul poly21
+root@hanul-virtual-machine:~# nano /etc/passwd
+root@hanul-virtual-machine:~# ls /home
+hanul  poly2  poly21  poly3  poly5  t1.txt  t2.txt
+root@hanul-virtual-machine:~# ls /
+apple  boot   def  etc   lib    lib64   lost+found  melon  nethome  proc  run   snap  swapfile  tmp  var
+bin    cdrom  dev  home  lib32  libx32  media       mnt    opt      root  sbin  srv   sys       usr
+root@hanul-virtual-machine:~# userdel  -r poly5
+userdel: poly5 mail spool (/var/mail/poly5) not found
+root@hanul-virtual-machine:~# nano /etc/passwd
+root@hanul-virtual-machine:~# <pre>root@hanul-virtual-machine:~# passwd poly1
+root@hanul-virtual-machine:~# <pre>root@hanul-virtual-machine:~# passwd poly1
+passwd: &apos;poly1&apos; 사용자가 없습니다
+root@hanul-virtual-machine:~# passwd poly21
+새 암호: 밀번호: 암호가 앞뒤 어느쪽에서 읽어도 같은 문맥입니다
+잘못된 비밀번호: 암호가 앞뒤 어느쪽에서 읽어도 같은 문맥입니다
+새 암호 재입력:  공적으로 업데이트했습니다
+passwd: 암호를 성공적으로 업데이트했습니다
+root@hanul-virtual-machine:~# login1
+hanul-virtual-machine 로그인: poly21
+root@hanul-virtual-machine:~# <pre>root@hanul-virtual-machine:~# passwd poly1
+root@hanul-virtual-machine:~# <pre>root@hanul-virtual-machine:~# passwd poly1
+root@hanul-virtual-machine:~# 자가 없습니다
+root@hanul-virtual-machine:~# passwd poly21cal.com
+새 암호: 밀번호: 암호가 앞뒤 어느쪽에서 읽어도 같은 문맥입니다
+잘못된 비밀번호: 암호가 앞뒤 어느쪽에서 읽어도 같은 문맥입니다
+새 암호 재입력:  공적으로 업데이트했습니다ce for Applications.
+passwd: 암호를 성공적으로 업데이트했습니다ce for Applications.
+root@hanul-virtual-machine:~# login1ftware packages with your
+hanul-virtual-machine 로그인: poly21 personal use.
+암호: e to Ubuntu 22.04.2 LTS (GNU/Linux 5.19.0-35-generic x86_64)
+Welcome to Ubuntu 22.04.2 LTS (GNU/Linux 5.19.0-35-generic x86_64)
+ * Documentation:  https://help.ubuntu.comions is not enabled.
+ * Documentation:  https://help.ubuntu.comical.comnot enabled.
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+ * Introducing Expanded Security Maintenance for Applications.
+ * Introducing Expanded Security Maintenance for Applications.
+   Receive updates to over 25,000 software packages with your
+   Ubuntu Pro subscription. Free for personal use.
+     https://ubuntu.com/pro
+     https://ubuntu.com/proes is more than a week old.
+Expanded Security Maintenance for Applications is not enabled.
+Expanded Security Maintenance for Applications is not enabled.</font>       <font color="#12488B"><b>usr</b></font> color=
+

@@ -1,0 +1,177 @@
+root@hanul-virtual-machine:~# ls
+linkdir     poly1.xz  test.txt      test2     공개      바탕화면  음악
+mydata.txt  snap      test1.txt     test3     다운로드  비디오    템플릿
+poly.tar    test      test1.txt.xz  text.txt  문서      사진
+root@hanul-virtual-machine:~# cd 다운로드
+root@hanul-virtual-machine:~/다운로드# ㅣㄴ
+ㅣㄴ: 명령을 찾을 수 없습니다
+root@hanul-virtual-machine:~/다운로드# ls
+root@hanul-virtual-machine:~/다운로드# wget
+wget: URL 빠짐
+사용법: wget [<옵션>]... [URL]...
+
+자세한 옵션은 `wget --help'를 입력하십시오.
+root@hanul-virtual-machine:~/다운로드# wget https://chrome
+--2023-05-16 10:22:50--  https://chrome/
+chrome (chrome) 해석 중... ^C      
+root@hanul-virtual-machine:~/다운로드# wget https://dl.google.com/linux/direct/google-chrome-stable-current_amd64.dev
+--2023-05-16 10:24:13--  https://dl.google.com/linux/direct/google-chrome-stable-current_amd64.dev
+dl.google.com (dl.google.com) 해석 중... 172.217.24.110, 2404:6800:4005:814::200e
+다음으로 연결 중: dl.google.com (dl.google.com)|172.217.24.110|:443... 연결했습니다.
+HTTP 요청을 보냈습니다. 응답 기다리는 중... 404 Not Found
+2023-05-16 10:24:13 오류 404: Not Found.
+
+root@hanul-virtual-machine:~/다운로드# wget https://dl.google.com/linux/direct/google-chrome-stable-current_amd64.deb
+--2023-05-16 10:24:16--  https://dl.google.com/linux/direct/google-chrome-stable-current_amd64.deb
+dl.google.com (dl.google.com) 해석 중... 172.217.24.110, 2404:6800:4005:814::200e
+다음으로 연결 중: dl.google.com (dl.google.com)|172.217.24.110|:443... 연결했습니다.
+HTTP 요청을 보냈습니다. 응답 기다리는 중... 404 Not Found
+2023-05-16 10:24:16 오류 404: Not Found.
+
+root@hanul-virtual-machine:~/다운로드# wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+--2023-05-16 10:24:52--  https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+dl.google.com (dl.google.com) 해석 중... 172.217.25.14, 2404:6800:4005:80b::200e
+다음으로 연결 중: dl.google.com (dl.google.com)|172.217.25.14|:443... 연결했습니다.
+HTTP 요청을 보냈습니다. 응답 기다리는 중... 200 OK
+길이: 94953468 (91M) [application/x-debian-package]
+저장 위치: ‘google-chrome-stable_current_amd64.deb’
+
+google-chrome-stabl 100%[===================>]  90.55M  37.0MB/s    / 2.5s     
+
+2023-05-16 10:24:55 (37.0 MB/s) - ‘google-chrome-stable_current_amd64.deb’ 저장함 [94953468/94953468]
+
+root@hanul-virtual-machine:~/다운로드# dpkg -l chrome
+dpkg-query: chrome와 일치하는 패키지를 찾지 못했습니다
+root@hanul-virtual-machine:~/다운로드# dpkg -i google-chrome-stable_current_amd64.deb
+Selecting previously unselected package google-chrome-stable.
+(데이터베이스 읽는중 ...현재 201976개의 파일과 디렉터리가 설치되어 있습니다.)
+Preparing to unpack google-chrome-stable_current_amd64.deb ...
+Unpacking google-chrome-stable (113.0.5672.92-1) ...
+google-chrome-stable (113.0.5672.92-1) 설정하는 중입니다 ...
+update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/x-www-browser (x-www-browser) in auto mode
+update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/gnome-www-browser (gnome-www-browser) in auto mode
+update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/google-chrome (google-chrome) in auto mode
+Processing triggers for mailcap (3.70+nmu1ubuntu1) ...
+Processing triggers for gnome-menus (3.36.0-1ubuntu3) ...
+Processing triggers for desktop-file-utils (0.26-1ubuntu3) ...
+Processing triggers for man-db (2.10.2-1) ...
+root@hanul-virtual-machine:~/다운로드# apt intsall google-chrome-stable_current_amd64.deb
+E: 잘못된 작업 intsall
+root@hanul-virtual-machine:~/다운로드# apt install google-chrome-stable_current_amd64.deb
+패키지 목록을 읽는 중입니다... 완료
+의존성 트리를 만드는 중입니다... 완료
+상태 정보를 읽는 중입니다... 완료        
+E: google-chrome-stable_current_amd64.deb 패키지를 찾을 수 없습니다
+root@hanul-virtual-machine:~/다운로드# apt install ./google-chrome-stable_current_amd64.deb
+패키지 목록을 읽는 중입니다... 완료
+의존성 트리를 만드는 중입니다... 완료
+상태 정보를 읽는 중입니다... 완료        
+주의, './google-chrome-stable_current_amd64.deb' 대신에 'google-chrome-stable' 패키지를 선택합니다
+패키지 google-chrome-stable는 이미 최신 버전입니다 (113.0.5672.92-1).
+0개 업그레이드, 0개 새로 설치, 0개 제거 및 0개 업그레이드 안 함.
+root@hanul-virtual-machine:~/다운로드# google-chrome
+[4152:4152:0516/104025.131533:ERROR:zygote_host_impl_linux.cc(100)] Running as root without --no-sandbox is not supported. See https://crbug.com/638180.
+root@hanul-virtual-machine:~/다운로드# nano google-chrome-stable
+root@hanul-virtual-machine:~/다운로드# nano /usr/bin/google-chrome-stable
+root@hanul-virtual-machine:~/다운로드# google-chrome
+[4479:4479:0516/104534.555617:ERROR:network_service_instance_impl.cc(541)] Network service crashed, restarting service.
+[4558:4573:0516/104534.574345:ERROR:command_buffer_proxy_impl.cc(128)] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:43.847: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:43.871: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:45.151: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:45.153: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:45.227: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:45.270: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:45.273: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:45.445: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:45.446: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:45.450: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:45.547: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:45.603: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:45.606: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:45.667: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:45.672: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:45.701: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:45.746: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:45.771: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:45.774: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:45.847: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:45.875: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:45.879: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:45.955: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:45.986: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:45.989: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:46.075: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:46.079: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:46.101: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:46.202: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:46.203: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:46.266: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:46.480: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:46.512: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:46.541: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:47.354: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:52.978: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:52.987: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:54.735: google-chrome has no capability of surrounding-text feature
+
+(google-chrome:4479): IBUS-WARNING **: 10:45:54.744: google-chrome has no capability of surrounding-text feature
+root@hanul-virtual-machine:~/다운로드# [0516/104554.938455:ERROR:nacl_helper_linux.cc(355)] NaCl helper process running without a sandbox!
+Most likely you need to configure your SUID sandbox correctly
+
+root@hanul-virtual-machine:~/다운로드# bg
+bash: bg: 현재: 그런 작업이 없음
+root@hanul-virtual-machine:~/다운로드# 
+root@hanul-virtual-machine:~/다운로드# google-chrome
+기존 브라우저 세션에서 여는 중입니다.
+[0516/104829.168215:ERROR:nacl_helper_linux.cc(355)] NaCl helper process running without a sandbox!
+Most likely you need to configure your SUID sandbox correctly
+root@hanul-virtual-machine:~/다운로드# google-chrome
+기존 브라우저 세션에서 여는 중입니다.
+[0516/105053.641972:ERROR:nacl_helper_linux.cc(355)] NaCl helper process running without a sandbox!
+Most likely you need to configure your SUID sandbox correctly
+root@hanul-virtual-machine:~/다운로드# bg
+bash: bg: 현재: 그런 작업이 없음
+root@hanul-virtual-machine:~/다운로드# bg
+bash: bg: 현재: 그런 작업이 없음
+root@hanul-virtual-machine:~/다운로드# ^C
+root@hanul-virtual-machine:~/다운로드# 
+
