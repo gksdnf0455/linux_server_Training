@@ -1,0 +1,287 @@
+root@hanul-virtual-machine:~# systemctl restart apache2
+root@hanul-virtual-machine:~# dpkg -l apache2
+희망상태=알수없음(U)/설치(I)/지우기(R)/깨끗이(P)/>
+| 상태=아님(N)/설치(I)/설정(C)/풀림(U)/절반설정(F>
+| /    트리거밀림(T)
+|/ 오류?=(없음)/다시설치필요(R) (상태, 오류가 대 >
+||/ 이름           버전               Architectur>
++++-==============-==================-===========>
+ii  apache2        2.4.29-1ubuntu4.27 amd64      >
+lines 1-7/7 (END)
+root@hanul-virtual-machine:~# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+희망상태=알수없음(U)/설치(I)/지우기(R)/깨끗이(P)/>
+| 상태=아님(N)/설치(I)/설정(C)/풀림(U)/절반설정(F>
+| /    트리거밀림(T)
+|/ 오류?=(없음)/다시설치필요(R) (상태, 오류가 대 >
+||/ 이름           버전               Architectur>
++++-==============-==================-===========>
+ii  apache2        2.4.29-1ubuntu4.27 amd64      >
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+ach2emctl restart ap 
+Failed to restart apach2.service: Unit apach2.service not found.
+root@hanul-virtual-machine:~# systemctl restart apach2
+Failed to restart apach2.service: Unit apach2.service not found.
+root@hanul-virtual-machine:~# systemctl enable apache2
+Synchronizing state of apache2.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable apache2
+root@hanul-virtual-machine:~# dpkg -l apache2
+희망상태=알수없음(U)/설치(I)/지우기(R)/깨끗이(P)/>
+| 상태=아님(N)/설치(I)/설정(C)/풀림(U)/절반설정(F>
+| /    트리거밀림(T)
+|/ 오류?=(없음)/다시설치필요(R) (상태, 오류가 대 >
+||/ 이름           버전               Architectur>
++++-==============-==================-===========>
+ii  apache2        2.4.29-1ubuntu4.27 amd64      >
+...skipping...
+희망상태=알수없음(U)/설치(I)/지우기(R)/깨끗이(P)/>
+| 상태=아님(N)/설치(I)/설정(C)/풀림(U)/절반설정(F>
+| /    트리거밀림(T)
+|/ 오류?=(없음)/다시설치필요(R) (상태, 오류가 대 >
+||/ 이름           버전               Architectur>
++++-==============-==================-===========>
+ii  apache2        2.4.29-1ubuntu4.27 amd64      >
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-7/7 (END)
+root@hanul-virtual-machine:~# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+희망상태=알수없음(U)/설치(I)/지우기(R)/깨끗이(P)/>
+| 상태=아님(N)/설치(I)/설정(C)/풀림(U)/절반설정(F>
+| /    트리거밀림(T)
+|/ 오류?=(없음)/다시설치필요(R) (상태, 오류가 대 >
+||/ 이름           버전               Architectur>
++++-==============-==================-===========>
+ii  apache2        2.4.29-1ubuntu4.27 amd64      >
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+root@hanul-virtual-machine:~# dpkg -l apache2
+희망상태=알수없음(U)/설치(I)/지우기(R)/깨끗이(P)/>
+| 상태=아님(N)/설치(I)/설정(C)/풀림(U)/절반설정(F>
+| /    트리거밀림(T)
+|/ 오류?=(없음)/다시설치필요(R) (상태, 오류가 대 >
+||/ 이름           버전               Architectur>
++++-==============-==================-===========>
+ii  apache2        2.4.29-1ubuntu4.27 amd64      >
+log file: 
+root@hanul-virtual-machine:~# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+희망상태=알수없음(U)/설치(I)/지우기(R)/깨끗이(P)/>
+| 상태=아님(N)/설치(I)/설정(C)/풀림(U)/절반설정(F>
+| /    트리거밀림(T)
+|/ 오류?=(없음)/다시설치필요(R) (상태, 오류가 대 >
+||/ 이름           버전               Architectur>
++++-==============-==================-===========>
+ii  apache2        2.4.29-1ubuntu4.27 amd64      >
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+aceaemctl restart ap 
+Failed to restart apacea.service: Unit apacea.service not found.
+root@hanul-virtual-machine:~# dpkg -l apache2
+희망상태=알수없음(U)/설치(I)/지우기(R)/깨끗이(P)/>
+| 상태=아님(N)/설치(I)/설정(C)/풀림(U)/절반설정(F>
+| /    트리거밀림(T)
+|/ 오류?=(없음)/다시설치필요(R) (상태, 오류가 대 >
+||/ 이름           버전               Architectur>
++++-==============-==================-===========>
+ii  apache2        2.4.29-1ubuntu4.27 amd64      >
+lines 1-7/7 (END)
+^Croot@hanul-virtual-machine:~# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+희망상태=알수없음(U)/설치(I)/지우기(R)/깨끗이(P)/>
+| 상태=아님(N)/설치(I)/설정(C)/풀림(U)/절반설정(F>
+| /    트리거밀림(T)
+|/ 오류?=(없음)/다시설치필요(R) (상태, 오류가 대 >
+||/ 이름           버전               Architectur>
++++-==============-==================-===========>
+ii  apache2        2.4.29-1ubuntu4.27 amd64      >
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+d
+d: 명령을 찾을 수 없습니다
+root@hanul-virtual-machine:~# systemctl restart apacea
+Failed to restart apacea.service: Unit apacea.service not found.
+root@hanul-virtual-machine:~# systemctl restart apache2
+root@hanul-virtual-machine:~# systemctl enable apache2
+root@hanul-virtual-machine:~# systemctl enable apache2
+Synchronizing state of apache2.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable apache2
+root@hanul-virtual-machine:~# nano index.html
+root@hanul-virtual-machine:~# ifconfig
+ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.142.128  netmask 255.255.255.0  broadcast 192.168.142.255
+        inet6 fe80::bb3e:89cf:8c3b:4e15  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:74:8a:b2  txqueuelen 1000  (Ethernet)
+        RX packets 99104  bytes 142798099 (142.7 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 13203  bytes 1645052 (1.6 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 710  bytes 79086 (79.0 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 710  bytes 79086 (79.0 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+root@hanul-virtual-machine:~# ufw allow 80
+규칙이 추가되었습니다
+규칙이 추가되었습니다 (v6)
+root@hanul-virtual-machine:~# 
+
+
